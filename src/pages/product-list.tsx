@@ -1,7 +1,7 @@
 import { useRecoilValue } from 'recoil';
 import { productList } from 'recoil/products';
 
-export default function ProductListPage() {
+export default function ProductList() {
   const data = useRecoilValue(productList);
   console.log({ data });
   return (

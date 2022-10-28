@@ -1,0 +1,44 @@
+[
+  {
+    "id": "coupon_1",
+    "minPrice": 20000,
+    "duplication": true,
+    "company": "all",
+    "discountPercent": 5
+  },
+  {
+    "id": "coupon_2",
+    "minPrice": 30000,
+    "duplication": true,
+    "company": "all",
+    "freeShipping": true
+  },
+  {
+    "id": "coupon_3",
+    "minPrice": 30000,
+    "duplication": true,
+    "company": "(주)팜모닝",
+    "discountPrice": 3000
+  },
+  {
+    "id": "coupon_4",
+    "minPrice": 50000,
+    "duplication": true,
+    "company": "(주)팜모닝",
+    "discountPrice": 6000
+  },
+  {
+    "id": "coupon_5",
+    "minPrice": 20000,
+    "duplication": true,
+    "company": "그린랩스(주)",
+    "discountPrice": 2000
+  },
+  {
+    "id": "coupon_6",
+    "minPrice": 40000,
+    "duplication": true,
+    "company": "그린랩스(주)",
+    "discountPrice": 4000
+  }
+]
