@@ -7,13 +7,7 @@ type HeaderMenuItemProps = MenuItem & {
   isActive?: boolean;
 };
 
-export default function HeaderMenuItem({
-  isActive,
-  path,
-  label,
-  icon,
-  count,
-}: HeaderMenuItemProps) {
+export default function HeaderMenuItem({ isActive, path, label, icon, count }: HeaderMenuItemProps) {
   const { container, menuItem, active, itemLabel, badge } = styles;
 
   return (

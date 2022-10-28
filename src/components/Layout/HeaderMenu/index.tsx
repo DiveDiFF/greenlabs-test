@@ -8,20 +8,20 @@ import HeaderMenuItem from './MenuItem';
 
 const HEADER_MENUS: MenuItem[] = [
   {
-    label: "팜모닝 농자재 상점",
+    label: '팜모닝 농자재 상점',
     icon: <RiHome3Line />,
-    path: "/product-list",
+    path: '/product-list',
   },
   {
-    label: "쿠폰 목록",
+    label: '쿠폰 목록',
     icon: <RiCouponLine />,
-    path: "/coupon",
+    path: '/coupon',
     count: 5,
   },
   {
-    label: "장바구니",
+    label: '장바구니',
     icon: <RiShoppingCartLine />,
-    path: "/cart",
+    path: '/cart',
     count: 0,
   },
 ];
@@ -34,24 +34,24 @@ export default function HeaderMenu() {
   const headerMenus: MenuItem[] = useMemo(() => {
     const menus = [
       {
-        label: "팜모닝 농자재 상점",
+        label: '팜모닝 농자재 상점',
         icon: <RiHome3Line />,
-        path: "/product-list",
+        path: '/product-list',
       },
       {
-        label: "쿠폰 목록",
+        label: '쿠폰 목록',
         icon: <RiCouponLine />,
-        path: "/coupon",
+        path: '/coupon',
         count: 5,
       },
       {
-        label: "장바구니",
+        label: '장바구니',
         icon: <RiShoppingCartLine />,
-        path: "/cart",
+        path: '/cart',
         count: 0,
       },
     ];
-    if (pathname === "/cart") {
+    if (pathname === '/cart') {
       menus.splice(1, 0, menus.pop() as MenuItem);
       return menus;
     } else {
@@ -62,11 +62,7 @@ export default function HeaderMenu() {
   return (
     <ul className={container}>
       {headerMenus.map((menu) => (
-        <HeaderMenuItem
-          key={menu.label}
-          isActive={pathname === menu.path}
-          {...menu}
-        />
+        <HeaderMenuItem key={menu.label} isActive={pathname === menu.path} {...menu} />
       ))}
     </ul>
   );
