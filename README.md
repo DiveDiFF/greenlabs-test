@@ -1,34 +1,71 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# 그린랩스 프론트엔드 과제
 
-## Getting Started
+웹 프론트엔드 기술에 대한 기본 지식과 역량을 테스트하기 위해 만들어진 과제입니다.
 
-First, run the development server:
+## 목표
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+주어진 상품 데이터를 이용해 팜모닝 쇼핑몰의 상품 리스트 페이지(PLP)와 장바구니 페이지를 구현합니다.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 와이어프레임
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+[피그마](https://www.figma.com/file/uic0Yhs7b1fVVEswNxOeS6/%ED%8C%9C%EB%AA%A8%EB%8B%9D-%ED%94%84%EB%A1%A0%ED%8A%B8%EC%97%94%EB%93%9C-%EA%B3%BC%EC%A0%9C?node-id=0%3A1) 참고
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+### 필요 구현 사항
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+- 장바구니에 추가/삭제하는 기능
+- 유저는 상품에 대한 쿠폰을 적용할 수 있어야 하며, 최종 결제 금액을 확인할 수 있습니다.
+- 장바구니에 담긴 상품 중 결제할 상품을 선택하여 결제하는 기능
+- 장바구니에서 예상 결제 가격을 표시하는 기능
+- 결제 금액에 따라 적용 가능한 쿠폰을 보여주고 유저가 선택한 쿠폰을 적용하는 기능
+- 중복 적용 가능 쿠폰까지 최대 두 개의 쿠폰을 적용할 수 있어야 함
 
-## Learn More
+### 선택 구현 사항
 
-To learn more about Next.js, take a look at the following resources:
+- 상품 리스트 페이지(PLP)의 페이지네이션 구현
+- 쿠폰 조회 화면
+- 속성에 따른 상품 정렬 기능
+- 재고에 따른 선택 가능 갯수의 분기 처리(재고를 넘는 양의 선택 불가 또는 결제 진행 불가), 재고 5개 이하일 시 '매진 임박!' 등의 표시
+- 유저가 선택한 제품과 선택한 갯수가 상품 리스트 페이지(PLP)에서도 표시
+- 가장 할인이 많이 되는 쿠폰을 자동으로 적용해주는 기능.
+  - 쿠폰 적용 범위: 전체 쿠폰
+- UI/UX에 대한 (임의의) 추가 디테일 구현
+  - 기존 데이터에 있는 각 농자재의 속성들을 표현하거나, 디자인 디테일 또는 기능적인 디테일 추가 등을 진행할 수 있습니다.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### 평가 기준
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+- 상기된 `필수 구현 사항`과 `선택 구현 사항`의 기능이 주어진 와이어프레임에서 크게 벗어나지 않는 형태로 기한 내에 구현되었는지
+- 주어진 요구사항이 꼼꼼하게 구현되고, 오류가 발생하지 않는지
+- 컴포넌트와 유틸리티 등의 재사용성, 그리고 가독성을 고려해 코드를 작성했는지
+- 호환성이 고려되었는지
+  - 주의: 구형 브라우저 대응이 아닌, 비표준 API의 사용을 배제하고 널리 사용되는 API의 사용을 고려했는지
 
-## Deploy on Vercel
+### 추가 평가 기준
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- 본인이 자신있는 UX/UI 개선 사항을 자유롭게 추가하실 수 있으며, 이 또한 가산점의 대상이 될 수 있습니다.
+  - (단, 필수 기능이 먼저 구현되어야 합니다.)
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+### 쿠폰 목록 데이터
+
+- 쿠폰 1: 2만원 이상 구매 시 결제 금액 5% 할인 쿠폰. 중복 적용이 가능합니다.
+- 쿠폰 2: 3만원 이상 구매 시 배송비 무료 쿠폰. 중복 적용이 가능합니다.
+- 쿠폰 3: (주)팜모닝 제품 3만원 이상 구매 시 3000원 할인 쿠폰.
+- 쿠폰 4: (주)팜모닝 제품 5만원 이상 구매 시 6000원 할인 쿠폰.
+- 쿠폰 5: 그린랩스(주) 제품 2만원 이상 구매 시 2000원 할인 쿠폰.
+- 쿠폰 6: 그린랩스(주) 제품 4만원 이상 구매 시 4000원 할인 쿠폰.
+
+주의: 같은 회사 제품에는 (중복 적용 가능을 명시하지 않은 한) 쿠폰의 중복 적용이 불가능 합니다.
+
+- 쿠폰3 + 쿠폰4 -> 사용 불가능
+- 쿠폰3 + 쿠폰5 -> 사용 가능
+
+### 안내 사항
+
+- 결제 화면은 고려될 필요 없으며, '결제' 버튼 클릭 이후 비어있는 화면으로 이동시켜주면 됩니다.
+- 상품 상세 페이지(PDP)는 필요 없습니다.
+- 화면은 모바일 뷰를 가정해서 개발하면 됩니다. (가로 기준 720px)
+- React와 타입스크립트의 (익숙하다면 ReScript) 사용을 권장드리지만 필수는 아니며, 본인에게 익숙한 개발 스택을 사용해 개발하시면 됩니다.
+  - create-react-app 또는 next.js의 사용을 추천합니다.
+- API 개발은 고려하지 않으셔도 되며, 주어진 json 데이터만을 이용하면 됩니다.
+- 수월한 평가를 위해 라이브러리의 사용은 React와 스타일링 라이브러리(emotion 또는 css module)의 사용까지로 제한하며, 컴포넌트 라이브러리의 사용은 삼가해 주시기 바랍니다. (단, 아이콘의 경우는 자유 사용)
+- 과제에 주어진 요구사항이 부족하거나 불분명하다고 느껴질 때, '내가 이런 것도 만들어도 되나?' 싶을 때, 또는 그 외 궁금한 부분이 있다면 자유롭게 문의해 주세요.
+- 결과물은 GitHub 등 온라인 Git 저장소에 올려 제출하시면 됩니다.

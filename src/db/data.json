@@ -1,0 +1,1384 @@
+[
+  {
+    "__typename": "Pesticide",
+    "id": 3568,
+    "madeIn": "제조",
+    "productName": "가루자비",
+    "contentForm": "액상수화제",
+    "ratio": "30%",
+    "toxicity": "4급(저독성)",
+    "purpose": "살균제",
+    "aquaticToxicity": "3급",
+    "companyName": "그린랩스(주)",
+    "registrationNumber": "19-살균-213",
+    "ingredient": [
+      {
+        "__typename": "PesticideIngredient",
+        "korName": "보스칼리드",
+        "engName": "Boscalid",
+        "ratio": "15%",
+        "mechanism": "다2"
+      },
+      {
+        "__typename": "PesticideIngredient",
+        "korName": "메트라페논",
+        "engName": "Metrafenon",
+        "ratio": "15%",
+        "mechanism": "미분류"
+      }
+    ],
+    "quantity": 11,
+    "price": 27000
+  },
+  {
+    "__typename": "Pesticide",
+    "id": 47,
+    "madeIn": "제조",
+    "productName": "강초타",
+    "contentForm": "액제",
+    "ratio": "41%",
+    "toxicity": "4급(저독성)",
+    "purpose": "제초제",
+    "aquaticToxicity": "3급",
+    "companyName": "그린랩스(주)",
+    "registrationNumber": "19-제초-150",
+    "ingredient": [
+      {
+        "__typename": "PesticideIngredient",
+        "korName": "글리포세이트암모늄",
+        "engName": "Glyphosate-ammonium",
+        "ratio": "41%",
+        "mechanism": "G"
+      }
+    ],
+    "quantity": 7,
+    "price": 14000
+  },
+  {
+    "__typename": "Pesticide",
+    "id": 91,
+    "madeIn": "제조",
+    "productName": "경탄",
+    "contentForm": "액상수화제",
+    "ratio": "42%",
+    "toxicity": "4급(저독성)",
+    "purpose": "살균제",
+    "aquaticToxicity": "1급",
+    "companyName": "(주)팜모닝",
+    "registrationNumber": "8-살균-236",
+    "ingredient": [
+      {
+        "__typename": "PesticideIngredient",
+        "korName": "클로로탈로닐",
+        "engName": "Chlorothalonil",
+        "ratio": "35%",
+        "mechanism": "카"
+      },
+      {
+        "__typename": "PesticideIngredient",
+        "korName": "크레속심메틸",
+        "engName": "Kresoxim-methyl",
+        "ratio": "7%",
+        "mechanism": "다3"
+      }
+    ],
+    "quantity": 11,
+    "price": 41000
+  },
+  {
+    "__typename": "Pesticide",
+    "id": 94,
+    "madeIn": "제조",
+    "productName": "고수",
+    "contentForm": "수화제",
+    "ratio": "20%",
+    "toxicity": "4급(저독성)",
+    "purpose": "살균제",
+    "aquaticToxicity": "3급",
+    "companyName": "그린랩스(주)",
+    "registrationNumber": "19-살균-109",
+    "ingredient": [
+      {
+        "__typename": "PesticideIngredient",
+        "korName": "옥솔린산",
+        "engName": "Oxolinic acid",
+        "ratio": "20%",
+        "mechanism": "가4"
+      }
+    ],
+    "quantity": 11,
+    "price": 55000
+  },
+  {
+    "__typename": "Pesticide",
+    "id": 111,
+    "madeIn": "제조",
+    "productName": "골드미",
+    "contentForm": "액상수화제",
+    "ratio": "25%",
+    "toxicity": "4급(저독성)",
+    "purpose": "살균제",
+    "aquaticToxicity": "3급",
+    "companyName": "(주)팜모닝",
+    "registrationNumber": "8-살균-240",
+    "ingredient": [
+      {
+        "__typename": "PesticideIngredient",
+        "korName": "트리사이클라졸",
+        "engName": "Tricyclazole",
+        "ratio": "20%",
+        "mechanism": "자1"
+      },
+      {
+        "__typename": "PesticideIngredient",
+        "korName": "발리다마이신에이",
+        "engName": "Validamycin-a",
+        "ratio": "5%",
+        "mechanism": "아3"
+      }
+    ],
+    "quantity": 8,
+    "price": 32000
+  },
+  {
+    "__typename": "Pesticide",
+    "id": 112,
+    "madeIn": "제조",
+    "productName": "골드윈",
+    "contentForm": "액상수화제",
+    "ratio": "25%",
+    "toxicity": "4급(저독성)",
+    "purpose": "살충제",
+    "aquaticToxicity": "3급",
+    "companyName": "(주)팜모닝",
+    "registrationNumber": "8-살충-370",
+    "ingredient": [
+      {
+        "__typename": "PesticideIngredient",
+        "korName": "뷰프로페진",
+        "engName": "Buprofezin",
+        "ratio": "20%",
+        "mechanism": "16"
+      },
+      {
+        "__typename": "PesticideIngredient",
+        "korName": "피리플루퀴나존",
+        "engName": "Pyrifluquinazon",
+        "ratio": "5%",
+        "mechanism": "9b"
+      }
+    ],
+    "quantity": 4,
+    "price": 50000
+  },
+  {
+    "__typename": "Pesticide",
+    "id": 114,
+    "madeIn": "제조",
+    "productName": "골든밸런스",
+    "contentForm": "입상수화제",
+    "ratio": "20%",
+    "toxicity": "4급(저독성)",
+    "purpose": "살균제",
+    "aquaticToxicity": "1급",
+    "companyName": "그린랩스(주)",
+    "registrationNumber": "19-살균-158",
+    "ingredient": [
+      {
+        "__typename": "PesticideIngredient",
+        "korName": "피라클로스트로빈",
+        "engName": "Pyraclostrobin",
+        "ratio": "20%",
+        "mechanism": "다3"
+      }
+    ],
+    "quantity": 8,
+    "price": 21000
+  },
+  {
+    "__typename": "Pesticide",
+    "id": 132,
+    "madeIn": "제조",
+    "productName": "굳샷",
+    "contentForm": "수화제",
+    "ratio": "12.25%",
+    "toxicity": "4급(저독성)",
+    "purpose": "살균제",
+    "aquaticToxicity": "3급",
+    "companyName": "(주)팜모닝",
+    "registrationNumber": "8-살균-186",
+    "ingredient": [
+      {
+        "__typename": "PesticideIngredient",
+        "korName": "에트리디아졸",
+        "engName": "Etridiazole",
+        "ratio": "10%",
+        "mechanism": "바3"
+      },
+      {
+        "__typename": "PesticideIngredient",
+        "korName": "폴리옥신디",
+        "engName": "Polyoxin d",
+        "ratio": "2.25%",
+        "mechanism": "아4"
+      }
+    ],
+    "quantity": 9,
+    "price": 21000
+  },
+  {
+    "__typename": "Pesticide",
+    "id": 145,
+    "madeIn": "제조",
+    "productName": "균도사",
+    "contentForm": "유제",
+    "ratio": "10%",
+    "toxicity": "4급(저독성)",
+    "purpose": "살균제",
+    "aquaticToxicity": "3급",
+    "companyName": "그린랩스(주)",
+    "registrationNumber": "19-살균-99",
+    "ingredient": [
+      {
+        "__typename": "PesticideIngredient",
+        "korName": "헥사코나졸",
+        "engName": "Hexaconazole",
+        "ratio": "10%",
+        "mechanism": "사1"
+      }
+    ],
+    "quantity": 7,
+    "price": 37000
+  },
+  {
+    "__typename": "Pesticide",
+    "id": 161,
+    "madeIn": "제조",
+    "productName": "균스타일",
+    "contentForm": "액상수화제",
+    "ratio": "53%",
+    "toxicity": "4급(저독성)",
+    "purpose": "살균제",
+    "aquaticToxicity": "1급",
+    "companyName": "그린랩스(주)",
+    "registrationNumber": "19-살균-129",
+    "ingredient": [
+      {
+        "__typename": "PesticideIngredient",
+        "korName": "클로로탈로닐",
+        "engName": "Chlorothalonil",
+        "ratio": "53%",
+        "mechanism": "카"
+      }
+    ],
+    "quantity": 5,
+    "price": 26000
+  },
+  {
+    "__typename": "Pesticide",
+    "id": 163,
+    "madeIn": "제조",
+    "productName": "균에센",
+    "contentForm": "수화제",
+    "ratio": "60%",
+    "toxicity": "4급(저독성)",
+    "purpose": "살균제",
+    "aquaticToxicity": "1급",
+    "companyName": "그린랩스(주)",
+    "registrationNumber": "19-살균-177",
+    "ingredient": [
+      {
+        "__typename": "PesticideIngredient",
+        "korName": "플루아지남",
+        "engName": "Fluazinam",
+        "ratio": "40%",
+        "mechanism": "다5"
+      },
+      {
+        "__typename": "PesticideIngredient",
+        "korName": "트리플록시스트로빈",
+        "engName": "Trifloxystrobin",
+        "ratio": "20%",
+        "mechanism": "다3"
+      }
+    ],
+    "quantity": 7,
+    "price": 53000
+  },
+  {
+    "__typename": "Pesticide",
+    "id": 164,
+    "madeIn": "수입",
+    "productName": "균지기",
+    "contentForm": "수화제",
+    "ratio": "70%",
+    "toxicity": "4급(저독성)",
+    "purpose": "살균제",
+    "aquaticToxicity": "3급",
+    "companyName": "그린랩스(주)",
+    "registrationNumber": "19-살균-7",
+    "ingredient": [
+      {
+        "__typename": "PesticideIngredient",
+        "korName": "티오파네이트메틸",
+        "engName": "Thiophanate-methyl",
+        "ratio": "70%",
+        "mechanism": "나1"
+      }
+    ],
+    "quantity": 3,
+    "price": 13000
+  },
+  {
+    "__typename": "Pesticide",
+    "id": 205,
+    "madeIn": "제조",
+    "productName": "금자탑",
+    "contentForm": "분제",
+    "ratio": "3%",
+    "toxicity": "4급(저독성)",
+    "purpose": "살충제",
+    "aquaticToxicity": "3급",
+    "companyName": "(주)팜모닝",
+    "registrationNumber": "8-살충-126",
+    "ingredient": [
+      {
+        "__typename": "PesticideIngredient",
+        "korName": "뷰프로페진",
+        "engName": "Buprofezin",
+        "ratio": "1%",
+        "mechanism": "16"
+      },
+      {
+        "__typename": "PesticideIngredient",
+        "korName": "페노뷰카브",
+        "engName": "Fenobucarb",
+        "ratio": "2%",
+        "mechanism": "1a"
+      }
+    ],
+    "quantity": 8,
+    "price": 16000
+  },
+  {
+    "__typename": "Pesticide",
+    "id": 206,
+    "madeIn": "제조",
+    "productName": "금자탑",
+    "contentForm": "수화제",
+    "ratio": "25%",
+    "toxicity": "4급(저독성)",
+    "purpose": "살충제",
+    "aquaticToxicity": "3급",
+    "companyName": "(주)팜모닝",
+    "registrationNumber": "8-살충-125",
+    "ingredient": [
+      {
+        "__typename": "PesticideIngredient",
+        "korName": "뷰프로페진",
+        "engName": "Buprofezin",
+        "ratio": "5%",
+        "mechanism": "16"
+      },
+      {
+        "__typename": "PesticideIngredient",
+        "korName": "페노뷰카브",
+        "engName": "Fenobucarb",
+        "ratio": "20%",
+        "mechanism": "1a"
+      }
+    ],
+    "quantity": 6,
+    "price": 40000
+  },
+  {
+    "__typename": "Pesticide",
+    "id": 226,
+    "madeIn": "제조",
+    "productName": "깍지사이드",
+    "contentForm": "입상수화제",
+    "ratio": "20.6%",
+    "toxicity": "4급(저독성)",
+    "purpose": "살충제",
+    "aquaticToxicity": "1급",
+    "companyName": "그린랩스(주)",
+    "registrationNumber": "19-살충-169",
+    "ingredient": [
+      {
+        "__typename": "PesticideIngredient",
+        "korName": "아바멕틴",
+        "engName": "Abamectin",
+        "ratio": "0.6%",
+        "mechanism": "6"
+      },
+      {
+        "__typename": "PesticideIngredient",
+        "korName": "뷰프로페진",
+        "engName": "Buprofezin",
+        "ratio": "20%",
+        "mechanism": "16"
+      }
+    ],
+    "quantity": 2,
+    "price": 64000
+  },
+  {
+    "__typename": "Pesticide",
+    "id": 258,
+    "madeIn": "제조",
+    "productName": "나브",
+    "contentForm": "유제",
+    "ratio": "20%",
+    "toxicity": "4급(저독성)",
+    "purpose": "제초제",
+    "aquaticToxicity": "2급",
+    "companyName": "(주)팜모닝",
+    "registrationNumber": "8-제초-289",
+    "ingredient": [
+      {
+        "__typename": "PesticideIngredient",
+        "korName": "세톡시딤",
+        "engName": "Sethoxydim",
+        "ratio": "20%",
+        "mechanism": "A"
+      }
+    ],
+    "quantity": 5,
+    "price": 29000
+  },
+  {
+    "__typename": "Pesticide",
+    "id": 293,
+    "madeIn": "제조",
+    "productName": "네오보르도",
+    "contentForm": "수화제",
+    "ratio": "58%",
+    "toxicity": "4급(저독성)",
+    "purpose": "살균제",
+    "aquaticToxicity": "3급",
+    "companyName": "(주)팜모닝",
+    "registrationNumber": "8-살균-141",
+    "ingredient": [
+      {
+        "__typename": "PesticideIngredient",
+        "korName": "코퍼설페이트베이식",
+        "engName": "Copper sulfate basic",
+        "ratio": "58%",
+        "mechanism": "카"
+      }
+    ],
+    "quantity": 11,
+    "price": 40000
+  },
+  {
+    "__typename": "Pesticide",
+    "id": 300,
+    "madeIn": "제조",
+    "productName": "노내다",
+    "contentForm": "유제",
+    "ratio": "4.1%",
+    "toxicity": "4급(저독성)",
+    "purpose": "제초제",
+    "aquaticToxicity": "2급",
+    "companyName": "그린랩스(주)",
+    "registrationNumber": "19-제초-204",
+    "ingredient": [
+      {
+        "__typename": "PesticideIngredient",
+        "korName": "옥사디아길",
+        "engName": "Oxadiargyl",
+        "ratio": "1.6%",
+        "mechanism": "E"
+      },
+      {
+        "__typename": "PesticideIngredient",
+        "korName": "시메트린",
+        "engName": "Simetryn",
+        "ratio": "2.5%",
+        "mechanism": "C1"
+      }
+    ],
+    "quantity": 8,
+    "price": 67000
+  },
+  {
+    "__typename": "Pesticide",
+    "id": 311,
+    "madeIn": "제조",
+    "productName": "노비리",
+    "contentForm": "세립제",
+    "ratio": "1.5%",
+    "toxicity": "4급(저독성)",
+    "purpose": "살충제",
+    "aquaticToxicity": "3급",
+    "companyName": "그린랩스(주)",
+    "registrationNumber": "19-살충-157",
+    "ingredient": [
+      {
+        "__typename": "PesticideIngredient",
+        "korName": "티아메톡삼",
+        "engName": "Thiamethoxam",
+        "ratio": "1.5%",
+        "mechanism": "4a"
+      }
+    ],
+    "quantity": 6,
+    "price": 29000
+  },
+  {
+    "__typename": "Pesticide",
+    "id": 323,
+    "madeIn": "제조",
+    "productName": "논대장",
+    "contentForm": "입제",
+    "ratio": "0.82%",
+    "toxicity": "4급(저독성)",
+    "purpose": "제초제",
+    "aquaticToxicity": "3급",
+    "companyName": "(주)팜모닝",
+    "registrationNumber": "8-제초-420",
+    "ingredient": [
+      {
+        "__typename": "PesticideIngredient",
+        "korName": "펜퀴노트리온",
+        "engName": "Fenquinotrione",
+        "ratio": "0.65%",
+        "mechanism": "F2"
+      },
+      {
+        "__typename": "PesticideIngredient",
+        "korName": "트리아파몬",
+        "engName": "Triafamone",
+        "ratio": "0.17%",
+        "mechanism": "B"
+      }
+    ],
+    "quantity": 6,
+    "price": 54000
+  },
+  {
+    "__typename": "Pesticide",
+    "id": 369,
+    "madeIn": "제조",
+    "productName": "농프로",
+    "contentForm": "액상수화제",
+    "ratio": "20%",
+    "toxicity": "4급(저독성)",
+    "purpose": "살균제",
+    "aquaticToxicity": "3급",
+    "companyName": "그린랩스(주)",
+    "registrationNumber": "19-살균-36",
+    "ingredient": [
+      {
+        "__typename": "PesticideIngredient",
+        "korName": "펜사이큐론",
+        "engName": "Pencycuron",
+        "ratio": "20%",
+        "mechanism": "나4"
+      }
+    ],
+    "quantity": 5,
+    "price": 34000
+  },
+  {
+    "__typename": "Pesticide",
+    "id": 449,
+    "madeIn": "수입",
+    "productName": "다조미드",
+    "contentForm": "입제",
+    "ratio": "96.5%",
+    "toxicity": "4급(저독성)",
+    "purpose": "살균제",
+    "aquaticToxicity": "3급",
+    "companyName": "(주)팜모닝",
+    "registrationNumber": "8-살균-48",
+    "ingredient": [
+      {
+        "__typename": "PesticideIngredient",
+        "korName": "다조멧",
+        "engName": "Dazomet",
+        "ratio": "96.5%",
+        "mechanism": "미분류"
+      }
+    ],
+    "quantity": 2,
+    "price": 52000
+  },
+  {
+    "__typename": "Pesticide",
+    "id": 452,
+    "madeIn": "제조",
+    "productName": "다찌가렌골드",
+    "contentForm": "액제",
+    "ratio": "30%",
+    "toxicity": "4급(저독성)",
+    "purpose": "살균제",
+    "aquaticToxicity": "3급",
+    "companyName": "(주)팜모닝",
+    "registrationNumber": "8-살균-347",
+    "ingredient": [
+      {
+        "__typename": "PesticideIngredient",
+        "korName": "하이멕사졸",
+        "engName": "Hymexazol",
+        "ratio": "30%",
+        "mechanism": "사1"
+      }
+    ],
+    "quantity": 10,
+    "price": 41000
+  },
+  {
+    "__typename": "Pesticide",
+    "id": 467,
+    "madeIn": "제조",
+    "productName": "다트롤",
+    "contentForm": "유탁제",
+    "ratio": "4.5%",
+    "toxicity": "4급(저독성)",
+    "purpose": "살충제",
+    "aquaticToxicity": "1급",
+    "companyName": "(주)팜모닝",
+    "registrationNumber": "8-살충-394",
+    "ingredient": [
+      {
+        "__typename": "PesticideIngredient",
+        "korName": "플룩사메타마이드",
+        "engName": "Fluxametamide",
+        "ratio": "4.5%",
+        "mechanism": "30"
+      }
+    ],
+    "quantity": 2,
+    "price": 52000
+  },
+  {
+    "__typename": "Pesticide",
+    "id": 473,
+    "madeIn": "제조",
+    "productName": "단단",
+    "contentForm": "액상수화제",
+    "ratio": "24%",
+    "toxicity": "4급(저독성)",
+    "purpose": "살균제",
+    "aquaticToxicity": "1급",
+    "companyName": "(주)팜모닝",
+    "registrationNumber": "8-살균-235",
+    "ingredient": [
+      {
+        "__typename": "PesticideIngredient",
+        "korName": "클로로탈로닐",
+        "engName": "Chlorothalonil",
+        "ratio": "20%",
+        "mechanism": "카"
+      },
+      {
+        "__typename": "PesticideIngredient",
+        "korName": "디페노코나졸",
+        "engName": "Difenoconazole",
+        "ratio": "4%",
+        "mechanism": "사1"
+      }
+    ],
+    "quantity": 7,
+    "price": 15000
+  },
+  {
+    "__typename": "Pesticide",
+    "id": 494,
+    "madeIn": "제조",
+    "productName": "대박",
+    "contentForm": "입제",
+    "ratio": "15%",
+    "toxicity": "4급(저독성)",
+    "purpose": "살균.살충제",
+    "aquaticToxicity": "3급",
+    "companyName": "(주)팜모닝",
+    "registrationNumber": "8-균충-352",
+    "ingredient": [
+      {
+        "__typename": "PesticideIngredient",
+        "korName": "프로베나졸",
+        "engName": "Probenazole",
+        "ratio": "12%",
+        "mechanism": "차2"
+      },
+      {
+        "__typename": "PesticideIngredient",
+        "korName": "이미다클로프리드",
+        "engName": "Imidacloprid",
+        "ratio": "3%",
+        "mechanism": "4a"
+      }
+    ],
+    "quantity": 11,
+    "price": 56000
+  },
+  {
+    "__typename": "Pesticide",
+    "id": 516,
+    "madeIn": "제조",
+    "productName": "더블센서",
+    "contentForm": "입제",
+    "ratio": "2.3%",
+    "toxicity": "4급(저독성)",
+    "purpose": "살균.살충제",
+    "aquaticToxicity": "1급",
+    "companyName": "그린랩스(주)",
+    "registrationNumber": "19-균충-148",
+    "ingredient": [
+      {
+        "__typename": "PesticideIngredient",
+        "korName": "테부코나졸",
+        "engName": "Tebuconazole",
+        "ratio": "2%",
+        "mechanism": "사1"
+      },
+      {
+        "__typename": "PesticideIngredient",
+        "korName": "비펜트린",
+        "engName": "Bifenthrin",
+        "ratio": "0.3%",
+        "mechanism": "3a"
+      }
+    ],
+    "quantity": 5,
+    "price": 25000
+  },
+  {
+    "__typename": "Pesticide",
+    "id": 521,
+    "madeIn": "제조",
+    "productName": "더블킥",
+    "contentForm": "액상수화제",
+    "ratio": "4.9%",
+    "toxicity": "3급(보통독성)",
+    "purpose": "살충제",
+    "aquaticToxicity": "1급",
+    "companyName": "(주)팜모닝",
+    "registrationNumber": "8-살충-380",
+    "ingredient": [
+      {
+        "__typename": "PesticideIngredient",
+        "korName": "아바멕틴",
+        "engName": "Abamectin",
+        "ratio": "0.9%",
+        "mechanism": "6"
+      },
+      {
+        "__typename": "PesticideIngredient",
+        "korName": "스피네토람",
+        "engName": "Spinetoram",
+        "ratio": "4%",
+        "mechanism": "5"
+      }
+    ],
+    "quantity": 11,
+    "price": 63000
+  },
+  {
+    "__typename": "Pesticide",
+    "id": 533,
+    "madeIn": "제조",
+    "productName": "더푸레쎈",
+    "contentForm": "액제",
+    "ratio": "44%",
+    "toxicity": "4급(저독성)",
+    "purpose": "제초제",
+    "aquaticToxicity": "3급",
+    "companyName": "그린랩스(주)",
+    "registrationNumber": "19-제초-80",
+    "ingredient": [
+      {
+        "__typename": "PesticideIngredient",
+        "korName": "글루포시네이트암모늄",
+        "engName": "Glufosinate-ammonium",
+        "ratio": "4%",
+        "mechanism": "H"
+      },
+      {
+        "__typename": "PesticideIngredient",
+        "korName": "글리포세이트이소프로필아민",
+        "engName": "Glyphosate-isopropylamine",
+        "ratio": "40%",
+        "mechanism": "G"
+      }
+    ],
+    "quantity": 6,
+    "price": 27000
+  },
+  {
+    "__typename": "Pesticide",
+    "id": 560,
+    "madeIn": "수입",
+    "productName": "델란",
+    "contentForm": "입상수화제",
+    "ratio": "66%",
+    "toxicity": "4급(저독성)",
+    "purpose": "살균제",
+    "aquaticToxicity": "1급",
+    "companyName": "(주)팜모닝",
+    "registrationNumber": "8-살균-37",
+    "ingredient": [
+      {
+        "__typename": "PesticideIngredient",
+        "korName": "디티아논",
+        "engName": "Dithianon",
+        "ratio": "66%",
+        "mechanism": "카"
+      }
+    ],
+    "quantity": 10,
+    "price": 21000
+  },
+  {
+    "__typename": "Pesticide",
+    "id": 583,
+    "madeIn": "제조",
+    "productName": "도사빔",
+    "contentForm": "액상수화제",
+    "ratio": "41.7%",
+    "toxicity": "3급(보통독성)",
+    "purpose": "살균제",
+    "aquaticToxicity": "3급",
+    "companyName": "그린랩스(주)",
+    "registrationNumber": "19-살균-34",
+    "ingredient": [
+      {
+        "__typename": "PesticideIngredient",
+        "korName": "트리사이클라졸",
+        "engName": "Tricyclazole",
+        "ratio": "41.7%",
+        "mechanism": "자1"
+      }
+    ],
+    "quantity": 10,
+    "price": 36000
+  },
+  {
+    "__typename": "Pesticide",
+    "id": 633,
+    "madeIn": "제조",
+    "productName": "동작그만",
+    "contentForm": "유제",
+    "ratio": "2.15%",
+    "toxicity": "4급(저독성)",
+    "purpose": "살충제",
+    "aquaticToxicity": "3급",
+    "companyName": "그린랩스(주)",
+    "registrationNumber": "19-살충-167",
+    "ingredient": [
+      {
+        "__typename": "PesticideIngredient",
+        "korName": "에마멕틴벤조에이트",
+        "engName": "Emamectin benzoate",
+        "ratio": "2.15%",
+        "mechanism": "6"
+      }
+    ],
+    "quantity": 4,
+    "price": 19000
+  },
+  {
+    "__typename": "Pesticide",
+    "id": 636,
+    "madeIn": "제조",
+    "productName": "두루두루",
+    "contentForm": "액상수화제",
+    "ratio": "21.7%",
+    "toxicity": "4급(저독성)",
+    "purpose": "살균제",
+    "aquaticToxicity": "2급",
+    "companyName": "그린랩스(주)",
+    "registrationNumber": "19-살균-165",
+    "ingredient": [
+      {
+        "__typename": "PesticideIngredient",
+        "korName": "아족시스트로빈",
+        "engName": "Azoxystrobin",
+        "ratio": "21.7%",
+        "mechanism": "다3"
+      }
+    ],
+    "quantity": 9,
+    "price": 69000
+  },
+  {
+    "__typename": "Pesticide",
+    "id": 642,
+    "madeIn": "제조",
+    "productName": "듀스",
+    "contentForm": "유제",
+    "ratio": "40%",
+    "toxicity": "4급(저독성)",
+    "purpose": "제초제",
+    "aquaticToxicity": "2급",
+    "companyName": "(주)팜모닝",
+    "registrationNumber": "8-제초-147",
+    "ingredient": [
+      {
+        "__typename": "PesticideIngredient",
+        "korName": "메톨라클로르",
+        "engName": "Metolachlor",
+        "ratio": "20%",
+        "mechanism": "K3"
+      },
+      {
+        "__typename": "PesticideIngredient",
+        "korName": "펜디메탈린",
+        "engName": "Pendimethalin",
+        "ratio": "20%",
+        "mechanism": "K1"
+      }
+    ],
+    "quantity": 10,
+    "price": 12000
+  },
+  {
+    "__typename": "Pesticide",
+    "id": 643,
+    "madeIn": "제조",
+    "productName": "듀스",
+    "contentForm": "입제",
+    "ratio": "6%",
+    "toxicity": "4급(저독성)",
+    "purpose": "제초제",
+    "aquaticToxicity": "3급",
+    "companyName": "(주)팜모닝",
+    "registrationNumber": "8-제초-148",
+    "ingredient": [
+      {
+        "__typename": "PesticideIngredient",
+        "korName": "메톨라클로르",
+        "engName": "Metolachlor",
+        "ratio": "3%",
+        "mechanism": "K3"
+      },
+      {
+        "__typename": "PesticideIngredient",
+        "korName": "펜디메탈린",
+        "engName": "Pendimethalin",
+        "ratio": "3%",
+        "mechanism": "K1"
+      }
+    ],
+    "quantity": 4,
+    "price": 69000
+  },
+  {
+    "__typename": "Pesticide",
+    "id": 677,
+    "madeIn": "제조",
+    "productName": "딱풀",
+    "contentForm": "직접살포정제",
+    "ratio": "9.8%",
+    "toxicity": "4급(저독성)",
+    "purpose": "제초제",
+    "aquaticToxicity": "3급",
+    "companyName": "(주)팜모닝",
+    "registrationNumber": "8-제초-383",
+    "ingredient": [
+      {
+        "__typename": "PesticideIngredient",
+        "korName": "벤조비사이클론",
+        "engName": "Benzobicyclon",
+        "ratio": "6.6%",
+        "mechanism": "F2"
+      },
+      {
+        "__typename": "PesticideIngredient",
+        "korName": "플루세토설퓨론",
+        "engName": "Flucetosulfuron",
+        "ratio": "0.7%",
+        "mechanism": "B"
+      },
+      {
+        "__typename": "PesticideIngredient",
+        "korName": "이마조설퓨론",
+        "engName": "Imazosulfuron",
+        "ratio": "2.5%",
+        "mechanism": "B"
+      }
+    ],
+    "quantity": 8,
+    "price": 41000
+  },
+  {
+    "__typename": "Pesticide",
+    "id": 690,
+    "madeIn": "수입",
+    "productName": "라스트콜",
+    "contentForm": "액상수화제",
+    "ratio": "5%",
+    "toxicity": "4급(저독성)",
+    "purpose": "살균제",
+    "aquaticToxicity": "3급",
+    "companyName": "(주)팜모닝",
+    "registrationNumber": "8-살균-52",
+    "ingredient": [
+      {
+        "__typename": "PesticideIngredient",
+        "korName": "폴리옥신디",
+        "engName": "Polyoxin d",
+        "ratio": "5%",
+        "mechanism": "아4"
+      }
+    ],
+    "quantity": 5,
+    "price": 2000
+  },
+  {
+    "__typename": "Pesticide",
+    "id": 699,
+    "madeIn": "제조",
+    "productName": "라이플",
+    "contentForm": "수화제",
+    "ratio": "19%",
+    "toxicity": "4급(저독성)",
+    "purpose": "살충제",
+    "aquaticToxicity": "1급",
+    "companyName": "그린랩스(주)",
+    "registrationNumber": "19-살충-85",
+    "ingredient": [
+      {
+        "__typename": "PesticideIngredient",
+        "korName": "디플루벤주론",
+        "engName": "Diflubenzuron",
+        "ratio": "18%",
+        "mechanism": "15"
+      },
+      {
+        "__typename": "PesticideIngredient",
+        "korName": "람다사이할로트린",
+        "engName": "Lambda-cyhalothrin",
+        "ratio": "1%",
+        "mechanism": "3a"
+      }
+    ],
+    "quantity": 10,
+    "price": 65000
+  },
+  {
+    "__typename": "Pesticide",
+    "id": 725,
+    "madeIn": "제조",
+    "productName": "레딧고",
+    "contentForm": "유제",
+    "ratio": "1.8%",
+    "toxicity": "3급(보통독성)",
+    "purpose": "살충제",
+    "aquaticToxicity": "1급",
+    "companyName": "그린랩스(주)",
+    "registrationNumber": "19-살충-166",
+    "ingredient": [
+      {
+        "__typename": "PesticideIngredient",
+        "korName": "아바멕틴",
+        "engName": "Abamectin",
+        "ratio": "1.8%",
+        "mechanism": "6"
+      }
+    ],
+    "quantity": 5,
+    "price": 6000
+  },
+  {
+    "__typename": "Pesticide",
+    "id": 728,
+    "madeIn": "제조",
+    "productName": "레이다",
+    "contentForm": "유현탁제",
+    "ratio": "18.71%",
+    "toxicity": "4급(저독성)",
+    "purpose": "살균제",
+    "aquaticToxicity": "3급",
+    "companyName": "그린랩스(주)",
+    "registrationNumber": "19-살균-185",
+    "ingredient": [
+      {
+        "__typename": "PesticideIngredient",
+        "korName": "아족시스트로빈",
+        "engName": "Azoxystrobin",
+        "ratio": "7.01%",
+        "mechanism": "다3"
+      },
+      {
+        "__typename": "PesticideIngredient",
+        "korName": "프로피코나졸",
+        "engName": "Propiconazole",
+        "ratio": "11.7%",
+        "mechanism": "사1"
+      }
+    ],
+    "quantity": 5,
+    "price": 34000
+  },
+  {
+    "__typename": "Pesticide",
+    "id": 738,
+    "madeIn": "제조",
+    "productName": "렌비어",
+    "contentForm": "입상수화제",
+    "ratio": "10%",
+    "toxicity": "4급(저독성)",
+    "purpose": "살균제",
+    "aquaticToxicity": "3급",
+    "companyName": "(주)팜모닝",
+    "registrationNumber": "8-살균-421",
+    "ingredient": [
+      {
+        "__typename": "PesticideIngredient",
+        "korName": "메펜트리플루코나졸",
+        "engName": "Mefentrifluconazole",
+        "ratio": "10%",
+        "mechanism": ""
+      }
+    ],
+    "quantity": 4,
+    "price": 53000
+  },
+  {
+    "__typename": "Pesticide",
+    "id": 750,
+    "madeIn": "제조",
+    "productName": "로브랄",
+    "contentForm": "수화제",
+    "ratio": "50%",
+    "toxicity": "4급(저독성)",
+    "purpose": "살균제",
+    "aquaticToxicity": "3급",
+    "companyName": "(주)팜모닝",
+    "registrationNumber": "8-살균-327",
+    "ingredient": [
+      {
+        "__typename": "PesticideIngredient",
+        "korName": "이프로디온",
+        "engName": "Iprodione",
+        "ratio": "50%",
+        "mechanism": "마3"
+      }
+    ],
+    "quantity": 4,
+    "price": 51000
+  },
+  {
+    "__typename": "Pesticide",
+    "id": 753,
+    "madeIn": "제조",
+    "productName": "로티플",
+    "contentForm": "액상수화제",
+    "ratio": "10%",
+    "toxicity": "4급(저독성)",
+    "purpose": "살균제",
+    "aquaticToxicity": "2급",
+    "companyName": "그린랩스(주)",
+    "registrationNumber": "19-살균-67",
+    "ingredient": [
+      {
+        "__typename": "PesticideIngredient",
+        "korName": "디페노코나졸",
+        "engName": "Difenoconazole",
+        "ratio": "10%",
+        "mechanism": "사1"
+      }
+    ],
+    "quantity": 5,
+    "price": 14000
+  },
+  {
+    "__typename": "Pesticide",
+    "id": 762,
+    "madeIn": "제조",
+    "productName": "롬멜",
+    "contentForm": "액상수화제",
+    "ratio": "10%",
+    "toxicity": "4급(저독성)",
+    "purpose": "살균제",
+    "aquaticToxicity": "3급",
+    "companyName": "그린랩스(주)",
+    "registrationNumber": "19-살균-186",
+    "ingredient": [
+      {
+        "__typename": "PesticideIngredient",
+        "korName": "사이아조파미드",
+        "engName": "Cyazofamid",
+        "ratio": "10%",
+        "mechanism": "다4"
+      }
+    ],
+    "quantity": 3,
+    "price": 51000
+  },
+  {
+    "__typename": "Pesticide",
+    "id": 767,
+    "madeIn": "제조",
+    "productName": "롱케어",
+    "contentForm": "액상수화제",
+    "ratio": "11.7%",
+    "toxicity": "4급(저독성)",
+    "purpose": "살균제",
+    "aquaticToxicity": "1급",
+    "companyName": "(주)팜모닝",
+    "registrationNumber": "8-살균-367",
+    "ingredient": [
+      {
+        "__typename": "PesticideIngredient",
+        "korName": "디페노코나졸",
+        "engName": "Difenoconazole",
+        "ratio": "4.7%",
+        "mechanism": "사1"
+      },
+      {
+        "__typename": "PesticideIngredient",
+        "korName": "플룩사피록사드",
+        "engName": "Fluxapyroxad",
+        "ratio": "7%",
+        "mechanism": "다2"
+      }
+    ],
+    "quantity": 5,
+    "price": 19000
+  },
+  {
+    "__typename": "Pesticide",
+    "id": 785,
+    "madeIn": "제조",
+    "productName": "리도밀골드",
+    "contentForm": "수화제",
+    "ratio": "12%",
+    "toxicity": "4급(저독성)",
+    "purpose": "살균제",
+    "aquaticToxicity": "3급",
+    "companyName": "(주)팜모닝",
+    "registrationNumber": "8-살균-311",
+    "ingredient": [
+      {
+        "__typename": "PesticideIngredient",
+        "korName": "메탈락실-엠",
+        "engName": "Metalaxyl-m",
+        "ratio": "12%",
+        "mechanism": "가1"
+      }
+    ],
+    "quantity": 4,
+    "price": 51000
+  },
+  {
+    "__typename": "Pesticide",
+    "id": 805,
+    "madeIn": "제조",
+    "productName": "리도참골드",
+    "contentForm": "수화제",
+    "ratio": "54%",
+    "toxicity": "4급(저독성)",
+    "purpose": "살균제",
+    "aquaticToxicity": "3급",
+    "companyName": "(주)팜모닝",
+    "registrationNumber": "8-살균-312",
+    "ingredient": [
+      {
+        "__typename": "PesticideIngredient",
+        "korName": "카벤다짐",
+        "engName": "Carbendazim",
+        "ratio": "45%",
+        "mechanism": "나1"
+      },
+      {
+        "__typename": "PesticideIngredient",
+        "korName": "메탈락실-엠",
+        "engName": "Metalaxyl-m",
+        "ratio": "9%",
+        "mechanism": "가1"
+      }
+    ],
+    "quantity": 5,
+    "price": 42000
+  },
+  {
+    "__typename": "Pesticide",
+    "id": 807,
+    "madeIn": "수입",
+    "productName": "리모트",
+    "contentForm": "액상수화제",
+    "ratio": "2%",
+    "toxicity": "4급(저독성)",
+    "purpose": "살충제",
+    "aquaticToxicity": "1급",
+    "companyName": "(주)팜모닝",
+    "registrationNumber": "8-살충-45",
+    "ingredient": [
+      {
+        "__typename": "PesticideIngredient",
+        "korName": "비펜트린",
+        "engName": "Bifenthrin",
+        "ratio": "2%",
+        "mechanism": "3a"
+      }
+    ],
+    "quantity": 5,
+    "price": 29000
+  },
+  {
+    "__typename": "Pesticide",
+    "id": 828,
+    "madeIn": "수입",
+    "productName": "리테인",
+    "contentForm": "수화제",
+    "ratio": "15%",
+    "toxicity": "4급(저독성)",
+    "purpose": "생장조정제",
+    "aquaticToxicity": "3급",
+    "companyName": "(주)팜모닝",
+    "registrationNumber": "8-생조-29",
+    "ingredient": [
+      {
+        "__typename": "PesticideIngredient",
+        "korName": "아비글리신",
+        "engName": "Aviglycine(aminoethoxyvinylglycine)",
+        "ratio": "15%",
+        "mechanism": ""
+      }
+    ],
+    "quantity": 8,
+    "price": 11000
+  },
+  {
+    "__typename": "Pesticide",
+    "id": 830,
+    "madeIn": "제조",
+    "productName": "리파머",
+    "contentForm": "액상수화제",
+    "ratio": "4.98%",
+    "toxicity": "4급(저독성)",
+    "purpose": "제초제",
+    "aquaticToxicity": "3급",
+    "companyName": "(주)팜모닝",
+    "registrationNumber": "8-제초-387",
+    "ingredient": [
+      {
+        "__typename": "PesticideIngredient",
+        "korName": "벤조비사이클론",
+        "engName": "Benzobicyclon",
+        "ratio": "4%",
+        "mechanism": "F2"
+      },
+      {
+        "__typename": "PesticideIngredient",
+        "korName": "플로르피록시펜벤질",
+        "engName": "Florpyrauxifen-benzyl",
+        "ratio": "0.5%",
+        "mechanism": "O"
+      },
+      {
+        "__typename": "PesticideIngredient",
+        "korName": "페녹슐람",
+        "engName": "Penoxsulam",
+        "ratio": "0.48%",
+        "mechanism": "B"
+      }
+    ],
+    "quantity": 4,
+    "price": 35000
+  }
+]
