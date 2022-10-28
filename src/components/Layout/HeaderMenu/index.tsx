@@ -1,4 +1,5 @@
 import { useRouter } from 'next/router';
+import { useMemo } from 'react';
 import { RiCouponLine, RiHome3Line, RiShoppingCartLine } from 'react-icons/ri';
 import { MenuItem } from 'typings/menu';
 
@@ -26,22 +27,47 @@ const HEADER_MENUS: MenuItem[] = [
 ];
 
 export default function HeaderMenu() {
-  const { container, menuItemWrapper } = styles;
+  const { container } = styles;
 
   const { pathname } = useRouter();
 
+  const headerMenus: MenuItem[] = useMemo(() => {
+    const menus = [
+      {
+        label: "팜모닝 농자재 상점",
+        icon: <RiHome3Line />,
+        path: "/product-list",
+      },
+      {
+        label: "쿠폰 목록",
+        icon: <RiCouponLine />,
+        path: "/coupon",
+        count: 5,
+      },
+      {
+        label: "장바구니",
+        icon: <RiShoppingCartLine />,
+        path: "/cart",
+        count: 0,
+      },
+    ];
+    if (pathname === "/cart") {
+      menus.splice(1, 0, menus.pop() as MenuItem);
+      return menus;
+    } else {
+      return menus;
+    }
+  }, [pathname]);
+
   return (
     <ul className={container}>
-      {HEADER_MENUS.map((menu) => {
-        console.log(menu.path, pathname, menu.path === pathname);
-        return (
-          <HeaderMenuItem
-            key={menu.label}
-            isActive={pathname === menu.path}
-            {...menu}
-          />
-        );
-      })}
+      {headerMenus.map((menu) => (
+        <HeaderMenuItem
+          key={menu.label}
+          isActive={pathname === menu.path}
+          {...menu}
+        />
+      ))}
     </ul>
   );
 }
