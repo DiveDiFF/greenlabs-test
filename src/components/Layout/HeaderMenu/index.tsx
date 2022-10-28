@@ -1,6 +1,9 @@
 import { useRouter } from 'next/router';
 import { useMemo } from 'react';
 import { RiCouponLine, RiHome3Line, RiShoppingCartLine } from 'react-icons/ri';
+import { useRecoilValue } from 'recoil';
+import { myCartList } from 'recoil/cart';
+import { myCouponList } from 'recoil/coupon';
 import { MenuItem } from 'typings/menu';
 
 import styles from './HeaderMenu.module.css';
@@ -28,6 +31,8 @@ const HEADER_MENUS: MenuItem[] = [
 
 export default function HeaderMenu() {
   const { container } = styles;
+  const myCartItems = useRecoilValue(myCartList);
+  const myCoupons = useRecoilValue(myCouponList);
 
   const { pathname } = useRouter();
 
@@ -42,13 +47,13 @@ export default function HeaderMenu() {
         label: '쿠폰 목록',
         icon: <RiCouponLine />,
         path: '/coupon',
-        count: 5,
+        count: myCoupons.length,
       },
       {
         label: '장바구니',
         icon: <RiShoppingCartLine />,
         path: '/cart',
-        count: 0,
+        count: myCartItems.length,
       },
     ];
     if (pathname === '/cart') {
@@ -57,7 +62,7 @@ export default function HeaderMenu() {
     } else {
       return menus;
     }
-  }, [pathname]);
+  }, [myCartItems.length, myCoupons.length, pathname]);
 
   return (
     <ul className={container}>
