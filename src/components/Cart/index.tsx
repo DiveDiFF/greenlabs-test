@@ -5,6 +5,7 @@ import { ProductItem } from 'typings/product';
 
 import ApplyCoupon from './ApplyCoupon';
 import CartItemList from './CartItemList';
+import Receipt from './Receipt';
 
 type MyCartProps = {
   cartData: ProductItem[];
@@ -18,7 +19,7 @@ export default function MyCart({ cartData }: MyCartProps) {
       <Divider />
       <ApplyCoupon couponNumber={couponData.length} />
       <Divider />
-      <section>계산</section>
+      <Receipt />
     </div>
   );
 }

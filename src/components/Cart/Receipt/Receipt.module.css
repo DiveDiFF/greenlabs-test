@@ -1,0 +1,25 @@
+.container {
+  margin: 24px 0;
+}
+
+.categoryContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  line-height: 1.75rem;
+  margin: 16px 0;
+}
+
+.categoryContainer:last-of-type {
+  margin-bottom: 24px;
+}
+
+.labelText {
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.priceText {
+  font-size: 1rem;
+  color: #444;
+}
