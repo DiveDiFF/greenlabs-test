@@ -1,7 +1,10 @@
+import MyCart from 'components/Cart';
+import { Suspense } from 'react';
+
 export default function Cart() {
   return (
-    <>
-      <p>장바구니</p>
-    </>
+    <Suspense fallback="...Now Loading">
+      <MyCart />
+    </Suspense>
   );
 }

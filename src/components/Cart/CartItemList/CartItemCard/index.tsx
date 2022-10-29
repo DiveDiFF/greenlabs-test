@@ -1,5 +1,5 @@
 import Chip from 'components/common/Chip';
-import { AiOutlineCloseCircle } from 'react-icons/ai';
+import { AiFillCloseCircle } from 'react-icons/ai';
 
 import styles from './CartItemCard.module.css';
 
@@ -28,7 +28,7 @@ export default function CartItemCard() {
       </div>
 
       <button className={iconButton}>
-        <AiOutlineCloseCircle className={icon} />
+        <AiFillCloseCircle className={icon} />
       </button>
     </div>
   );
