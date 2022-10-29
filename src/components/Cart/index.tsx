@@ -1,11 +1,16 @@
 import Divider from 'components/common/Divider';
+import { ProductItem } from 'typings/product';
 
 import CartItemList from './CartItemList';
 
-export default function MyCart() {
+type MyCartProps = {
+  cartData: ProductItem[];
+};
+
+export default function MyCart({ cartData }: MyCartProps) {
   return (
     <div>
-      <CartItemList />
+      <CartItemList cartData={cartData} />
       <Divider />
       <section>쿠폰 적용</section>
       <Divider />
