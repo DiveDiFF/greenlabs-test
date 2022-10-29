@@ -1,0 +1,9 @@
+.listContainer {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.itemContainer {
+  margin: 8px;
+  flex: 1 1 auto;
+}

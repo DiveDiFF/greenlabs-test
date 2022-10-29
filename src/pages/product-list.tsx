@@ -1,12 +1,10 @@
+import ProductCardList from 'components/ProductList';
+import { Suspense } from 'react';
 import { useRecoilValue } from 'recoil';
 import { productList } from 'recoil/products';
 
 export default function ProductList() {
   const data = useRecoilValue(productList);
   console.log({ data });
-  return (
-    <>
-      <p>프로덕트 리스트</p>
-    </>
-  );
+  return <Suspense fallback="...Now Loading">{data ? <ProductCardList productData={data} /> : <></>}</Suspense>;
 }
