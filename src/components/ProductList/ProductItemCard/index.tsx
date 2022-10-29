@@ -1,3 +1,4 @@
+import Chip from 'components/common/Chip';
 import { ProductItem } from 'typings/product';
 
 import styles from './ProductItemCard.module.css';
@@ -5,7 +6,7 @@ import styles from './ProductItemCard.module.css';
 type ProductItemCardProps = ProductItem;
 
 export default function ProductItemCard({ id, productName, companyName, price, quantity }: ProductItemCardProps) {
-  const { container, titleText, descriptionText, headWrapper, selectForm, selector, submitButton } = styles;
+  const { container, titleText, descriptionText, headWrapper, selectForm, selector, submitButton, chipContainer } = styles;
   return (
     <div className={container}>
       <div className={headWrapper}>
@@ -25,6 +26,11 @@ export default function ProductItemCard({ id, productName, companyName, price, q
           추가
         </button>
       </form>
+      {quantity <= 5 && (
+        <div className={chipContainer}>
+          <Chip label="매진 임박!" />
+        </div>
+      )}
     </div>
   );
 }
