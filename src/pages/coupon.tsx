@@ -1,7 +1,9 @@
+import MyCouponList from 'components/Coupon';
+import { Suspense } from 'react';
+import { useRecoilValue } from 'recoil';
+import { myCouponList } from 'recoil/coupon';
+
 export default function Coupon() {
-  return (
-    <>
-      <p>보유 쿠폰 리스트</p>
-    </>
-  );
+  const couponData = useRecoilValue(myCouponList);
+  return <Suspense fallback="...Now Loading">{couponData ? <MyCouponList couponData={couponData} /> : <></>}</Suspense>;
 }
