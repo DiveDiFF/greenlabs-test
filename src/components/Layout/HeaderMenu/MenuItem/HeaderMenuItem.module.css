@@ -33,7 +33,7 @@
   margin-left: 8px;
 }
 
-.active > a.menuItem > span.itemLabel {
+.active > a.menuItem > h1.itemLabel {
   display: inline-block;
   flex: 1 1 auto;
 }
