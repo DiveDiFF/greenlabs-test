@@ -14,7 +14,7 @@ export default function HeaderMenuItem({ isActive, path, label, icon, count }: H
     <li className={`${container} ${isActive && active}`}>
       <Link href={path} className={menuItem}>
         {icon}
-        <span className={itemLabel}>{label}</span>
+        <h1 className={itemLabel}>{label}</h1>
         {!!count && <span className={badge}>{count}</span>}
       </Link>
     </li>
