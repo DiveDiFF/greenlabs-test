@@ -14,6 +14,7 @@
   justify-content: center;
   align-items: center;
   font-size: 1.25rem;
+  font-weight: 700;
   position: relative;
 }
 
@@ -33,7 +34,7 @@
   margin-left: 8px;
 }
 
-.active > a.menuItem > h1.itemLabel {
+.active > a.menuItem > h2.itemLabel {
   display: inline-block;
   flex: 1 1 auto;
 }
