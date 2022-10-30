@@ -15,6 +15,7 @@
 
 .couponButton:disabled {
   background-color: #fff;
+  cursor: inherit;
 }
 
 .selected {
