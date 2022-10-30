@@ -34,9 +34,6 @@ export default function MyCouponList({ couponData }: MyCouponListProps) {
   );
 
   const handleClickCouponItem = (id: string) => (event: MouseEvent<HTMLButtonElement>) => {
-    event.preventDefault();
-    console.log(id);
-
     const newCouponData = couponData.map((coupon) => {
       if (coupon.id === id) {
         return {
