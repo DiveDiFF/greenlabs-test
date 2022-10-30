@@ -1,6 +1,6 @@
-import { MouseEvent, useCallback, useMemo } from 'react';
-import { useSetRecoilState } from 'recoil';
-import { myCouponList } from 'recoil/coupon';
+import { MouseEvent, useCallback } from 'react';
+import { useRecoilValue, useSetRecoilState } from 'recoil';
+import { appliedCouponList, myCouponList } from 'recoil/coupon';
 import { CouponItem } from 'typings/coupon';
 
 import CouponItemCard from './CouponItemCard';
@@ -14,23 +14,23 @@ export default function MyCouponList({ couponData }: MyCouponListProps) {
   const { text, listItemContainer } = styles;
 
   const setCoupons = useSetRecoilState(myCouponList);
-  const appliedCoupon = useMemo(() => couponData.filter((coupon) => coupon?.isApplied), [couponData]);
+  const appliedCoupons = useRecoilValue(appliedCouponList);
 
   const disabledChecker = useCallback(
     (id: string) => {
-      if (appliedCoupon?.some((coupon) => coupon?.id === id)) {
+      if (appliedCoupons?.some((coupon) => coupon?.id === id)) {
         return false;
       } else {
-        if (!appliedCoupon?.length) {
+        if (!appliedCoupons?.length) {
           return false;
-        } else if (appliedCoupon?.length === 1) {
-          return !(appliedCoupon[0].duplication || couponData.find((coupon) => coupon.id === id)?.duplication);
+        } else if (appliedCoupons?.length === 1) {
+          return !(appliedCoupons[0].duplication || couponData.find((coupon) => coupon.id === id)?.duplication);
         } else {
           return true;
         }
       }
     },
-    [appliedCoupon, couponData],
+    [appliedCoupons, couponData],
   );
 
   const handleClickCouponItem = (id: string) => (event: MouseEvent<HTMLButtonElement>) => {
