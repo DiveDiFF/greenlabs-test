@@ -4,41 +4,47 @@
     "minPrice": 20000,
     "duplication": true,
     "company": "all",
-    "discountPercent": 5
+    "discountPercent": 5,
+    "isApplied": false
   },
   {
     "id": "coupon_2",
     "minPrice": 30000,
     "duplication": true,
     "company": "all",
-    "freeShipping": true
+    "freeShipping": true,
+    "isApplied": false
   },
   {
     "id": "coupon_3",
     "minPrice": 30000,
-    "duplication": true,
+    "duplication": false,
     "company": "(주)팜모닝",
-    "discountPrice": 3000
+    "discountPrice": 3000,
+    "isApplied": false
   },
   {
     "id": "coupon_4",
     "minPrice": 50000,
-    "duplication": true,
+    "duplication": false,
     "company": "(주)팜모닝",
-    "discountPrice": 6000
+    "discountPrice": 6000,
+    "isApplied": false
   },
   {
     "id": "coupon_5",
     "minPrice": 20000,
-    "duplication": true,
+    "duplication": false,
     "company": "그린랩스(주)",
-    "discountPrice": 2000
+    "discountPrice": 2000,
+    "isApplied": false
   },
   {
     "id": "coupon_6",
     "minPrice": 40000,
-    "duplication": true,
+    "duplication": false,
     "company": "그린랩스(주)",
-    "discountPrice": 4000
+    "discountPrice": 4000,
+    "isApplied": false
   }
 ]

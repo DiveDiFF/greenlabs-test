@@ -6,4 +6,10 @@ export type CouponItem = {
   discountPrice?: number;
   discountPercent?: number;
   freeShipping?: boolean;
+  isApplied: boolean;
+};
+
+export type ValidateCheck = {
+  id: string;
+  duplication: boolean;
 };
