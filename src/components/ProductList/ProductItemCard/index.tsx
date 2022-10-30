@@ -10,6 +10,7 @@ type ProductItemCardProps = {
 
 export default function ProductItemCard({ id, productName, companyName, price, quantity, onSubmit }: ProductItemCardProps) {
   const { container, titleText, descriptionText, headWrapper, selectForm, selector, submitButton, chipContainer } = styles;
+
   return (
     <div className={container}>
       <div className={headWrapper}>
@@ -31,7 +32,7 @@ export default function ProductItemCard({ id, productName, companyName, price, q
       </form>
       {quantity <= 5 && (
         <div className={chipContainer}>
-          <Chip label="매진 임박!" />
+          <Chip label="매진임박" />
         </div>
       )}
     </div>
