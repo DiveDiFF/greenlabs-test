@@ -1,26 +1,46 @@
 import { MouseEvent, useCallback } from 'react';
-import { useRecoilValue, useSetRecoilState } from 'recoil';
+import { useRecoilState, useRecoilValue } from 'recoil';
+import { calculateTotalPrice, calculateTotalPriceByCompany } from 'recoil/cart';
 import { appliedCouponList, myCouponList } from 'recoil/coupon';
-import { CouponItem } from 'typings/coupon';
 
 import CouponItemCard from './CouponItemCard';
 import styles from './MyCouponList.module.css';
 
-type MyCouponListProps = {
-  couponData: CouponItem[];
-};
-
-export default function MyCouponList({ couponData }: MyCouponListProps) {
+export default function MyCouponList() {
   const { text, listItemContainer } = styles;
 
-  const setCoupons = useSetRecoilState(myCouponList);
+  const [couponData, setCouponData] = useRecoilState(myCouponList);
   const appliedCoupons = useRecoilValue(appliedCouponList);
+  const totalPrice = useRecoilValue(calculateTotalPrice);
+  const totalPriceByCompany = useRecoilValue(calculateTotalPriceByCompany);
+
+  console.log(
+    totalPriceByCompany,
+    appliedCoupons.some((coupon) => coupon.company === 'all' && totalPrice >= coupon.minPrice),
+    appliedCoupons.some((coupon) => coupon.company === '그린랩스(주)' && totalPriceByCompany[0] >= coupon.minPrice),
+    appliedCoupons.some((coupon) => coupon.company === '(주)팜모닝' && totalPriceByCompany[1] >= coupon.minPrice),
+  );
 
   const disabledChecker = useCallback(
     (id: string) => {
+      // 적용 취소는 언제나 가능
       if (appliedCoupons?.some((coupon) => coupon?.id === id)) {
         return false;
       } else {
+        // min price check : 쿠폰에 기입된 회사별 최저 금액 이상 구매 시 적용 가능
+        const targetCoupon = couponData.find((coupon) => coupon.id === id);
+
+        if (targetCoupon) {
+          if (targetCoupon?.company === '그린랩스(주)' && targetCoupon.minPrice > totalPriceByCompany[0]) {
+            return true;
+          } else if (targetCoupon?.company === '(주)팜모닝' && targetCoupon.minPrice > totalPriceByCompany[1]) {
+            return true;
+          } else if (targetCoupon?.company === 'all' && targetCoupon.minPrice > totalPrice) {
+            return true;
+          }
+        }
+
+        // duplication check : 중복가능 포함하면 2개, 아니면 1개만 적용 가능
         if (!appliedCoupons?.length) {
           return false;
         } else if (appliedCoupons?.length === 1) {
@@ -30,10 +50,10 @@ export default function MyCouponList({ couponData }: MyCouponListProps) {
         }
       }
     },
-    [appliedCoupons, couponData],
+    [appliedCoupons, couponData, totalPrice, totalPriceByCompany],
   );
 
-  const handleClickCouponItem = (id: string) => (event: MouseEvent<HTMLButtonElement>) => {
+  const handleClickCouponItem = (id: string) => (_event: MouseEvent<HTMLButtonElement>) => {
     const newCouponData = couponData.map((coupon) => {
       if (coupon.id === id) {
         return {
@@ -44,7 +64,7 @@ export default function MyCouponList({ couponData }: MyCouponListProps) {
         return coupon;
       }
     });
-    setCoupons(newCouponData);
+    setCouponData(newCouponData);
   };
 
   return (

@@ -25,6 +25,23 @@ export const calculateTotalPrice = selector<number>({
   },
 });
 
+export const calculateTotalPriceByCompany = selector({
+  key: 'calculateTotalPriceByCompany',
+  get: ({ get }) => {
+    const selectedCartItems = get(selectedCartList);
+    return selectedCartItems.reduce(
+      (acc, currentVal) => {
+        if (currentVal.productData.companyName === '그린랩스(주)') {
+          return [currentVal?.productData?.price * currentVal.quantity + acc[0], acc[1]];
+        } else {
+          return [acc[0], currentVal?.productData?.price * currentVal.quantity + acc[1]];
+        }
+      },
+      [0, 0],
+    );
+  },
+});
+
 export const calculateTotalDiscount = selector<number>({
   key: 'calculateTotalDiscount',
   get: ({ get }) => {
