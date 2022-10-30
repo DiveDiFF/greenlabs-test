@@ -1,0 +1,10 @@
+.text {
+  font-size: 1.25rem;
+  font-weight: 500;
+  color: var(--gray500);
+  margin-bottom: 24px;
+}
+
+.listItemContainer:not(:last-child) {
+  margin-bottom: 16px;
+}

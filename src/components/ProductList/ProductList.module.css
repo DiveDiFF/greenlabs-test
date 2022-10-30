@@ -1,0 +1,15 @@
+.listContainer {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.itemContainer {
+  margin: 8px 0;
+  flex: 1 1 auto;
+}
+
+@media (min-width: 615px) {
+  .itemContainer:nth-child(odd) {
+    margin-right: 16px;
+  }
+}

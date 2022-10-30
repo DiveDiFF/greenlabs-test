@@ -1,0 +1,16 @@
+.divider {
+  border: 0;
+  height: 1px;
+}
+
+.gray100 {
+  background-color: var(--gray100);
+}
+
+.gray200 {
+  background-color: var(--gray200);
+}
+
+.gray300 {
+  background-color: var(--gray300);
+}

@@ -1,0 +1,68 @@
+.container {
+  min-width: 280px;
+  margin: auto;
+  box-shadow: 0 8px 40px -12px rgba(20, 40, 60, 0.1);
+  padding: 16px;
+  text-align: left;
+  position: relative;
+  background-color: var(--gray100);
+  position: relative;
+}
+
+.headWrapper {
+  margin-bottom: 16px;
+}
+
+.titleText {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+}
+
+.descriptionText {
+  font-size: 1rem;
+  line-height: 1.25rem;
+  color: var(--gray00);
+  margin-bottom: 8px;
+}
+
+.selectForm {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.selector::after {
+  content: '\2304';
+  font-size: 2rem;
+  line-height: 20px;
+  padding-right: 4px;
+}
+
+.selector {
+  cursor: pointer;
+  height: 32px;
+  padding: 4px 8px;
+  display: inline-block;
+  flex: 1 1 auto;
+  margin-right: 8px;
+  border: 1px solid var(--gray300);
+}
+
+.submitButton {
+  cursor: pointer;
+  height: 32px;
+  padding: 4px 8px;
+  display: inline-block;
+  background-color: #ffffff;
+  border: 1px solid var(--gray300);
+}
+
+.submitButton:hover {
+  background-color: var(--gray100);
+}
+
+.chipContainer {
+  position: absolute;
+  top: 32px;
+  right: 16px;
+}

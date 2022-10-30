@@ -1,0 +1,39 @@
+.couponButton {
+  padding: 16px;
+  width: 100%;
+  height: auto;
+  background-color: var(--gray100);
+  border: 1px solid var(--gray200);
+  border-radius: 4px;
+  cursor: pointer;
+  text-align: left;
+}
+
+.couponButton:hover {
+  background-color: var(--gray200);
+}
+
+.couponButton:disabled {
+  background-color: #fff;
+  cursor: inherit;
+}
+
+.selected {
+  border: 1px solid var(--primary);
+}
+
+.title {
+  font-size: 1.25rem;
+  font-weight: 500;
+  margin-bottom: 24px;
+}
+
+.description {
+  font-size: 1rem;
+  line-height: 40px;
+  margin-bottom: 16px;
+}
+
+.description strong {
+  font-weight: 700;
+}

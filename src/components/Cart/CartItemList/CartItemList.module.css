@@ -1,0 +1,22 @@
+.companySector {
+  padding-bottom: 40px;
+}
+
+.companySector:not(:first-child) {
+  margin-top: 24px;
+}
+
+.companySector:not(:last-child) {
+  border-bottom: 1px solid var(--gray200);
+}
+
+.companySector > h5 {
+  font-size: 1.25rem;
+  font-weight: 500;
+  line-height: 1.75rem;
+  margin-bottom: 8px;
+}
+
+.cardContainer {
+  margin-bottom: 16px;
+}

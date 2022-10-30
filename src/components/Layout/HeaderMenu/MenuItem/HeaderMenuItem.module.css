@@ -1,0 +1,62 @@
+.container:not(:first-child) {
+  margin-left: 8px;
+}
+
+.active {
+  width: 100%;
+}
+
+.menuItem {
+  width: 62px;
+  height: 62px;
+  display: inline-flex;
+  border: 1px solid var(--gray300);
+  justify-content: center;
+  align-items: center;
+  font-size: 1.25rem;
+  font-weight: 700;
+  position: relative;
+}
+
+.menuItem:hover {
+  background-color: var(--gray100);
+}
+
+.active > a.menuItem {
+  flex: 1 1 auto;
+  width: 100%;
+  justify-content: space-between;
+  padding: 0 16px;
+}
+
+.itemLabel {
+  display: none;
+  margin-left: 8px;
+}
+
+.active > a.menuItem > h2.itemLabel {
+  display: inline-block;
+  flex: 1 1 auto;
+}
+
+.badge {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 24px;
+  height: 24px;
+  background-color: var(--primary);
+  color: #ffffff;
+  border-radius: 50%;
+  font-size: 0.75rem;
+  font-weight: 700;
+  position: absolute;
+  top: 6px;
+  right: 6px;
+}
+
+.active > a.menuItem > span.badge {
+  position: relative;
+  top: 0;
+  right: 0;
+}
