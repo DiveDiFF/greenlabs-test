@@ -1,7 +1,6 @@
 .container {
   width: 100%;
   padding: 24px;
-  transition: 0.3s;
   min-width: 280px;
   margin: auto;
   box-shadow: 0 8px 40px -12px rgba(20, 40, 60, 0.1);

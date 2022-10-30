@@ -1,5 +1,4 @@
 .container {
-  transition: 0.3s;
   min-width: 280px;
   margin: auto;
   box-shadow: 0 8px 40px -12px rgba(20, 40, 60, 0.1);
@@ -22,7 +21,7 @@
 .descriptionText {
   font-size: 1rem;
   line-height: 1.25rem;
-  color: var(--gray500);
+  color: var(--gray00);
   margin-bottom: 8px;
 }
 
@@ -59,7 +58,7 @@
 }
 
 .submitButton:hover {
-  background-color: vary(--gray100);
+  background-color: var(--gray100);
 }
 
 .chipContainer {
