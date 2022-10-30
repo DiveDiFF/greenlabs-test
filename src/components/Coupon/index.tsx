@@ -14,13 +14,6 @@ export default function MyCouponList() {
   const totalPrice = useRecoilValue(calculateTotalPrice);
   const totalPriceByCompany = useRecoilValue(calculateTotalPriceByCompany);
 
-  console.log(
-    totalPriceByCompany,
-    appliedCoupons.some((coupon) => coupon.company === 'all' && totalPrice >= coupon.minPrice),
-    appliedCoupons.some((coupon) => coupon.company === '그린랩스(주)' && totalPriceByCompany[0] >= coupon.minPrice),
-    appliedCoupons.some((coupon) => coupon.company === '(주)팜모닝' && totalPriceByCompany[1] >= coupon.minPrice),
-  );
-
   const disabledChecker = useCallback(
     (id: string) => {
       // 적용 취소는 언제나 가능

@@ -18,13 +18,11 @@ export default function MyCart() {
 
   const handleClickPayButton = useCallback(
     (_event: MouseEvent<HTMLButtonElement>) => {
-      console.log('234234');
       push('/payment');
     },
     [push],
   );
 
-  console.log(selectedCartLength);
   return (
     <>
       <CartItemList />
