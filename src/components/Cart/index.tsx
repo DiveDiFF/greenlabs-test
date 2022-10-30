@@ -1,14 +1,14 @@
 import Divider from 'components/common/Divider';
 import { useRecoilValue } from 'recoil';
 import { myCouponList } from 'recoil/coupon';
-import { ProductItem } from 'typings/product';
+import { CartItem } from 'typings/cart';
 
 import ApplyCoupon from './ApplyCoupon';
 import CartItemList from './CartItemList';
 import Receipt from './Receipt';
 
 type MyCartProps = {
-  cartData: ProductItem[];
+  cartData: CartItem[];
 };
 
 export default function MyCart({ cartData }: MyCartProps) {
