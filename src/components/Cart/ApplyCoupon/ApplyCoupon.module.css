@@ -17,7 +17,7 @@
   background-color: var(--gray100);
 }
 
-.applyButton > span {
+.applyButton > h5 {
   margin: 0 8px;
 }
 

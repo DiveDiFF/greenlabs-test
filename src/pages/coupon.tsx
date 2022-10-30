@@ -5,5 +5,5 @@ import { myCouponList } from 'recoil/coupon';
 
 export default function Coupon() {
   const couponData = useRecoilValue(myCouponList);
-  return <Suspense fallback="...Now Loading">{!!couponData?.length ? <MyCouponList couponData={couponData} /> : <></>}</Suspense>;
+  return <Suspense fallback="...Now Loading">{!!couponData?.length ? <MyCouponList /> : <></>}</Suspense>;
 }

@@ -1,22 +1,37 @@
 import Divider from 'components/common/Divider';
-import { CartItem } from 'typings/cart';
+import { useRouter } from 'next/router';
+import { MouseEvent, useCallback, useMemo } from 'react';
+import { useRecoilValue } from 'recoil';
+import { selectedCartList } from 'recoil/cart';
 
 import ApplyCoupon from './ApplyCoupon';
 import CartItemList from './CartItemList';
+import styles from './MyCart.module.css';
 import Receipt from './Receipt';
 
-type MyCartProps = {
-  cartData: CartItem[];
-};
+export default function MyCart() {
+  const selectedCartItem = useRecoilValue(selectedCartList);
+  const selectedCartLength = useMemo(() => selectedCartItem?.length, [selectedCartItem.length]);
+  const { push } = useRouter();
 
-export default function MyCart({ cartData }: MyCartProps) {
+  const { button } = styles;
+
+  const handleClickPayButton = useCallback(
+    (_event: MouseEvent<HTMLButtonElement>) => {
+      push('/payment');
+    },
+    [push],
+  );
+
   return (
     <>
-      <CartItemList cartData={cartData} />
-      <Divider />
+      <CartItemList />
       <ApplyCoupon />
       <Divider />
       <Receipt />
+      <button className={button} onClick={handleClickPayButton} disabled={!selectedCartLength}>
+        상품 {selectedCartLength}개 결제하기
+      </button>
     </>
   );
 }

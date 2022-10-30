@@ -6,6 +6,6 @@ import { productList } from 'recoil/products';
 
 export default function ProductList() {
   const data = useRecoilValue(productList);
-  console.log({ data });
+
   return <Suspense fallback="...Now Loading">{!!data?.length ? <ProductCardList productData={data} /> : <NoItem />}</Suspense>;
 }
