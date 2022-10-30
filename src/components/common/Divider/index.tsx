@@ -1,9 +1,9 @@
 import styles from './Divider.module.css';
 
 type DividerProps = {
-  color?: string;
+  color?: 'gray100' | 'gray200' | 'gray300';
 };
 export default function Divider({ color }: DividerProps) {
-  const { divider } = styles;
-  return <hr className={divider} style={{ backgroundColor: color }} />;
+  const { divider, gray100, gray200, gray300 } = styles;
+  return <hr className={`${divider} ${color === 'gray100' ? gray100 : color === 'gray200' ? gray200 : gray300}`} />;
 }

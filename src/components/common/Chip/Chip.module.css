@@ -19,13 +19,13 @@
 }
 
 .alert {
-  background-color: #d32f2f;
+  background-color: var(--error);
 }
 
 .success {
-  background-color: #12b564;
+  background-color: var(--primary);
 }
 
 .confirm {
-  background-color: #f57c00;
+  background-color: var(--warn);
 }

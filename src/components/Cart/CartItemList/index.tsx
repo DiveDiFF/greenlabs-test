@@ -17,6 +17,8 @@ export default function CartItemList({ cartData }: CartItemListProps) {
     <section>
       <article className={companySector}>
         <h5>그린랩스(주)</h5>
+        <CartItemCard />
+        <CartItemCard />
         <ul>
           {greenlabsCartItem?.map((item) => (
             <li key={item.id} className={cardContainer}>
