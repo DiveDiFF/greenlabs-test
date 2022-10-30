@@ -18,7 +18,7 @@ export default function CartItemList({ cartData }: CartItemListProps) {
   const farmMorningItem = useMemo(() => cartData?.filter((item) => item?.productData?.companyName === '(주)팜모닝'), [cartData]);
 
   console.log(cartData[0], greenlabsCartItem[0]);
-  const handleCheckboxChange = (id: string) => (event: ChangeEvent<HTMLInputElement>) => {
+  const handleCheckboxChange = (id: string) => (_event: ChangeEvent<HTMLInputElement>) => {
     setCartData((currentCartData) => {
       return currentCartData.map((item) => {
         if (item?.id === id) {
@@ -48,8 +48,11 @@ export default function CartItemList({ cartData }: CartItemListProps) {
     });
   };
 
-  const handleDeleteItem = (id: string) => (event: MouseEvent<HTMLButtonElement>) => {
+  const handleDeleteItem = (id: string) => (_event: MouseEvent<HTMLButtonElement>) => {
     console.log(id);
+    setCartData((currentCartData) => {
+      return currentCartData.filter((item) => item?.id !== id);
+    });
   };
   return (
     <section>
