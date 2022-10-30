@@ -2,9 +2,32 @@
 
 웹 프론트엔드 기술에 대한 기본 지식과 역량을 테스트하기 위해 만들어진 과제입니다.
 
+---
+
+## 과제 설명
+
+### package
+
+- next.js + recoil +  react-icons
+
+### folder structure
+
+- base : src
+- components : common, layout, 각 domain별 사용 component로 정리했습니다.
+- pages: page를 구성하는 기본 component와 data check를 위한 suspense로 구성되었습니다.
+- db : api 대신 사용될 mock json data 입니다.
+- recoil : atom, selector를 각 domain 별로 저장하였습니다.
+- styles : global style 로 기본 reset css 와  default style 설정, 그리고 color set 를 담았습니다. 나머지는 css module은 각 component folder 하위에 두었습니다.
+- typings : typescript 파일입니다.
+- utils : function 입니다.
+
 ## 목표
 
 주어진 상품 데이터를 이용해 팜모닝 쇼핑몰의 상품 리스트 페이지(PLP)와 장바구니 페이지를 구현합니다.
+
+
+
+---
 
 ## 와이어프레임
 
