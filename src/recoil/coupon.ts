@@ -6,3 +6,8 @@ export const myCouponList = atom<CouponItem[]>({
   key: 'myCouponList',
   default: mockCouponData,
 });
+
+export const applyCouponIdList = atom({
+  key: 'applyCouponIdList',
+  default: [],
+});
