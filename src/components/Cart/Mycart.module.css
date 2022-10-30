@@ -1,0 +1,19 @@
+.submitButton {
+  width: 100%;
+  height: 64px;
+  background-color: var(--primary);
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  margin-top: 16px;
+  font-size: 1.25rem;
+}
+
+.submitButton:hover {
+  background-color: var(--primaryDark);
+}
+
+.submitButton:disabled {
+  background-color: var(--gray300);
+  cursor: inherit;
+}
