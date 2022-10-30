@@ -18,7 +18,7 @@ export default function Receipt() {
         <p className={labelText}>할인금액</p>
         <p className={priceText}>- 2,000원</p>
       </div>
-      <Divider color="#e9e9e9" />
+      <Divider color="gray200" />
       <div className={categoryContainer}>
         <p className={labelText}>총 결제금액</p>
         <p className={priceText}>24,000원</p>
