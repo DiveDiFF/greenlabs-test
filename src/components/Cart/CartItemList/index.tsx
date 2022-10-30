@@ -1,18 +1,13 @@
 import { ChangeEvent, MouseEvent, useMemo } from 'react';
-import { useSetRecoilState } from 'recoil';
+import { useRecoilState } from 'recoil';
 import { myCartList } from 'recoil/cart';
-import { CartItem } from 'typings/cart';
 
 import CartItemCard from './CartItemCard';
 import styles from './CartItemList.module.css';
 
-type CartItemListProps = {
-  cartData: CartItem[];
-};
-
-export default function CartItemList({ cartData }: CartItemListProps) {
+export default function CartItemList() {
   const { companySector, cardContainer } = styles;
-  const setCartData = useSetRecoilState(myCartList);
+  const [cartData, setCartData] = useRecoilState(myCartList);
 
   const greenlabsCartItem = useMemo(() => cartData?.filter((item) => item?.productData?.companyName === '그린랩스(주)'), [cartData]);
   const farmMorningItem = useMemo(() => cartData?.filter((item) => item?.productData?.companyName === '(주)팜모닝'), [cartData]);

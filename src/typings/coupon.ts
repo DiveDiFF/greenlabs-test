@@ -8,8 +8,3 @@ export type CouponItem = {
   freeShipping?: boolean;
   isApplied: boolean;
 };
-
-export type ValidateCheck = {
-  id: string;
-  duplication: boolean;
-};

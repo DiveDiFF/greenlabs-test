@@ -1,9 +1,18 @@
 import Divider from 'components/common/Divider';
+import { useMemo } from 'react';
+import { useRecoilValue } from 'recoil';
+import { myCartList } from 'recoil/cart';
 
 import styles from './Receipt.module.css';
 
 export default function Receipt() {
   const { container, categoryContainer, labelText, priceText } = styles;
+  const cartItems = useRecoilValue(myCartList);
+
+  const selectedCartItems = useMemo(() => cartItems.filter((item) => item?.isSelected), [cartItems]);
+
+  console.log({ selectedCartItems });
+
   return (
     <section className={container}>
       <div className={categoryContainer}>

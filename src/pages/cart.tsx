@@ -7,5 +7,5 @@ import { myCartList } from 'recoil/cart';
 export default function Cart() {
   const cartData = useRecoilValue(myCartList);
 
-  return <Suspense fallback="...Now Loading">{!!cartData?.length ? <MyCart cartData={cartData} /> : <NoItem type="cart" />}</Suspense>;
+  return <Suspense fallback="...Now Loading">{!!cartData?.length ? <MyCart /> : <NoItem type="cart" />}</Suspense>;
 }
