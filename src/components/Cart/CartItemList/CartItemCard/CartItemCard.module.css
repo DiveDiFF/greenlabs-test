@@ -43,7 +43,7 @@
 }
 
 .numberInput {
-  border: 1px solid var(--gray200);
+  border: 1px solid var(--gray300);
   padding: 4px 8px;
   width: 60px;
 }

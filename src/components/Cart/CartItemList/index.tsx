@@ -15,26 +15,30 @@ export default function CartItemList({ cartData }: CartItemListProps) {
   const farmMorningItem = useMemo(() => cartData?.filter((item) => item?.productData.companyName === '(주)팜모닝'), [cartData]);
   return (
     <section>
-      <article className={companySector}>
-        <h5>그린랩스(주)</h5>
-        <ul>
-          {greenlabsCartItem?.map((item) => (
-            <li key={item.id} className={cardContainer}>
-              <CartItemCard />
-            </li>
-          ))}
-        </ul>
-      </article>
-      <article className={companySector}>
-        <h5>(주)팜모닝</h5>
-        <ul>
-          {farmMorningItem?.map((item) => (
-            <li key={item.id} className={cardContainer}>
-              <CartItemCard />
-            </li>
-          ))}
-        </ul>
-      </article>
+      {!!greenlabsCartItem?.length && (
+        <article className={companySector}>
+          <h5>그린랩스(주)</h5>
+          <ul>
+            {greenlabsCartItem?.map((item) => (
+              <li key={item.id} className={cardContainer}>
+                <CartItemCard />
+              </li>
+            ))}
+          </ul>
+        </article>
+      )}
+      {!!farmMorningItem?.length && (
+        <article className={companySector}>
+          <h5>(주)팜모닝</h5>
+          <ul>
+            {farmMorningItem?.map((item) => (
+              <li key={item.id} className={cardContainer}>
+                <CartItemCard />
+              </li>
+            ))}
+          </ul>
+        </article>
+      )}
     </section>
   );
 }

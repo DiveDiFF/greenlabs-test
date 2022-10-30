@@ -1,15 +1,14 @@
 import Chip from 'components/common/Chip';
 import { useRouter } from 'next/router';
 import { MouseEvent, useCallback } from 'react';
+import { useRecoilValue } from 'recoil';
+import { myCouponList } from 'recoil/coupon';
 
 import styles from './ApplyCoupon.module.css';
 
-type ApplyCouponProps = {
-  couponNumber: number;
-};
-
-export default function ApplyCoupon({ couponNumber }: ApplyCouponProps) {
+export default function ApplyCoupon() {
   const { push } = useRouter();
+  const couponData = useRecoilValue(myCouponList);
   const { container, applyButton, numberText } = styles;
 
   const handleClickCouponSection = useCallback(
@@ -25,7 +24,7 @@ export default function ApplyCoupon({ couponNumber }: ApplyCouponProps) {
         <h5>할인쿠폰</h5>
         <span>-1000원</span>
         <Chip label="적용완료" variant="confirm" />
-        <p className={numberText}>{couponNumber}개 보유</p>
+        <p className={numberText}>{couponData?.length}개 보유</p>
       </button>
     </section>
   );
